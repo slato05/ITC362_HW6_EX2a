@@ -6,6 +6,7 @@ import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.itc362_hw6_ex2a.databinding.ItemListCrimeBinding
 
+
 class CrimeHolder(
     private val binding: ItemListCrimeBinding
 ) : RecyclerView.ViewHolder(binding.root) {
@@ -23,9 +24,7 @@ class CrimeHolder(
     }
 }
 
-class CrimeListAdapter(
-    private val crimes: List<Crime>
-) : RecyclerView.Adapter<CrimeHolder>() {
+class CrimeListAdapter(private val crimes: List<Crime>) : RecyclerView.Adapter<CrimeHolder>() {
 
     override fun onCreateViewHolder(
         parent: ViewGroup,
