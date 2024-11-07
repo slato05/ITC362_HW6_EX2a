@@ -26,10 +26,7 @@ class CrimeHolder(
 
 class CrimeListAdapter(private val crimes: List<Crime>) : RecyclerView.Adapter<CrimeHolder>() {
 
-    override fun onCreateViewHolder(
-        parent: ViewGroup,
-        viewType: Int
-    ): CrimeHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CrimeHolder {
         val inflater = LayoutInflater.from(parent.context)
         val binding = ItemListCrimeBinding.inflate(inflater, parent, false)
         return CrimeHolder(binding)
